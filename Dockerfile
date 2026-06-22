@@ -23,17 +23,8 @@ COPY . .
 # Install production dependencies only
 RUN composer install --no-dev --optimize-autoloader --no-interaction
 
-# Configure Apache VirtualHost to point to Laravel public/
-RUN echo '<VirtualHost *:80>\n\
-    DocumentRoot /var/www/html/public\n\
-    <Directory /var/www/html/public>\n\
-        Options Indexes FollowSymLinks\n\
-        AllowOverride All\n\
-        Require all granted\n\
-    </Directory>\n\
-    ErrorLog ${APACHE_LOG_DIR}/error.log\n\
-    CustomLog ${APACHE_LOG_DIR}/access.log combined\n\
-</VirtualHost>' > /etc/apache2/sites-available/000-default.conf
+# Copy Apache config (proper file instead of echo)
+COPY docker/apache.conf /etc/apache2/sites-available/000-default.conf
 
 # Set permissions
 RUN chown -R www-data:www-data /var/www/html \
