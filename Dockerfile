@@ -60,7 +60,4 @@ RUN echo '<Directory /var/www/html/public>\n\tOptions Indexes FollowSymLinks\n\t
 EXPOSE 80
 
 # Start: run migrations then start Apache
-CMD php artisan config:clear && \
-    php artisan migrate --force && \
-    php artisan config:cache && \
-    apache2-foreground
+CMD php artisan config:clear && apache2-foreground
