@@ -26,4 +26,4 @@ RUN chown -R www-data:www-data /app/storage /app/bootstrap/cache && \
 EXPOSE 80
 ENV PORT=80
 
-CMD ["frankenphp", "run", "--config", "/etc/caddy/Caddyfile"]
+CMD php artisan migrate --force && frankenphp run --config /etc/caddy/Caddyfile
