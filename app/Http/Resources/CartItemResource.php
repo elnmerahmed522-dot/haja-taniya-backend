@@ -14,7 +14,10 @@ class CartItemResource extends JsonResource
      */
     public function toArray(Request $request): array
     {
-        $locale = $request->header('Accept-Language', 'en');
+        $rawLocale = $request->header('Accept-Language', 'en');
+        $primaryLocale = strtolower(explode(',', explode('-', $rawLocale)[0])[0]);
+        $locale = in_array($primaryLocale, ['ar', 'en']) ? $primaryLocale : 'en';
+
 
         return [
             'id' => $this->product_id, // يُطابق الـ product_id كما تتوقعه صفحات الـ React

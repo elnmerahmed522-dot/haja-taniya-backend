@@ -9,7 +9,11 @@ class ProductResource extends JsonResource
 {
     public function toArray(Request $request): array
     {
-        $locale = $request->header('Accept-Language', 'en'); // جلب لغة المستخدم من الهيدر (ar أو en)
+        // استخراج اللغة بأمان من الهيدر (يتعامل مع قيم المتصفح مثل "en-US,en;q=0.9")
+        $rawLocale = $request->header('Accept-Language', 'en');
+        $primaryLocale = strtolower(explode(',', explode('-', $rawLocale)[0])[0]);
+        $locale = in_array($primaryLocale, ['ar', 'en']) ? $primaryLocale : 'en';
+
 
         return [
             'id' => $this->id,
