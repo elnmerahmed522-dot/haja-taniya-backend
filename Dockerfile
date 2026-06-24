@@ -9,8 +9,8 @@ RUN apt-get update && apt-get install -y \
     && docker-php-ext-install pdo pdo_mysql zip bcmath \
     && apt-get clean && rm -rf /var/lib/apt/lists/*
 
-# تعطيل mpm_event نهائياً وتفعيل mpm_prefork و rewrite بشكل صحيح
-RUN a2dismod mpm_event && a2enmod mpm_prefork && a2enmod rewrite
+# تفعيل موديول الـ rewrite فقط وترك الـ MPM الافتراضي كما هو لمنع التعارض
+RUN a2enmod rewrite
 
 # Install Composer
 COPY --from=composer:2 /usr/bin/composer /usr/bin/composer
