@@ -21,9 +21,10 @@ RUN composer install --no-dev --optimize-autoloader --no-interaction
 # ضبط الصلاحيات للمجلدات الخاصة بـ Laravel
 RUN chown -R www-data:www-data /app/storage /app/bootstrap/cache && \
     chmod -R 775 /app/storage /app/bootstrap/cache
-
-# تشغيل السيرفر تلقائياً على بورت 80
+    
+# ضبط متغيرات البيئة لمنع الـ URI Errors وتوجيه البورت
 EXPOSE 80
 ENV PORT=80
 
-CMD php artisan migrate --force && frankenphp run --config /etc/caddy/Caddyfile
+# تشغيل الـ Migration كأمر تهيئة مسبق منفصل، ثم تشغيل السيرفر بشكل نظيف
+CMD ["frankenphp", "run", "--config", "/etc/caddy/Caddyfile", "--run", "php artisan migrate --force"]
