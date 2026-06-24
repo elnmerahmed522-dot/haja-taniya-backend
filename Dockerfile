@@ -9,8 +9,9 @@ RUN apt-get update && apt-get install -y \
     && docker-php-ext-install pdo pdo_mysql zip bcmath \
     && apt-get clean && rm -rf /var/lib/apt/lists/*
 
-# تفعيل الـ rewrite وحذف ملف الـ config الخاص بـ mpm_event تماماً لمنع أي تعارض
-RUN a2enmod rewrite && rm -f /etc/apache2/mods-enabled/mpm_event.load /etc/apache2/mods-enabled/mpm_event.conf
+# تفعيل الـ rewrite وتعطيل الموديول الزيادة من الـ config الرئيسي مباشرة
+RUN a2enmod rewrite && \
+    sed -i 's/^LoadModule mpm_event_module/#LoadModule mpm_event_module/' /etc/apache2/mods-available/mpm_event.load || true
 
 # Install Composer
 COPY --from=composer:2 /usr/bin/composer /usr/bin/composer
