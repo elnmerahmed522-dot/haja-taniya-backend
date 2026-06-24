@@ -17,8 +17,9 @@ class ProductController extends Controller
     // ==========================================
 
     // جلب جميع المنتجات مع دعم الفلترة والبحث
-    public function index(Request $request)
-    {
+public function index(\Illuminate\Http\Request $request)
+{
+    try {
         $query = Product::with(['category', 'colors', 'sizes']);
 
         if ($request->has('category')) {
@@ -49,11 +50,30 @@ class ProductController extends Controller
 
         $products = $query->latest()->get();
 
+        // محاولة إرجاع البيانات عبر الـ Resource المصمم
+        try {
+            return response()->json([
+                'status' => 'success',
+                'data' => \App\Http\Resources\ProductResource::collection($products)
+            ]);
+        } catch (\Exception $resourceException) {
+            // إذا فشل الـ Resource لأي سبب، سنرجع البيانات الخام مباشرة لكي لا يتعطل الموقع
+            return response()->json([
+                'status' => 'success',
+                'debug_mode' => 'fallback_to_raw_data due to resource error',
+                'error_message' => $resourceException->getMessage(),
+                'data' => $products
+            ]);
+        }
+
+    } catch (\Exception $e) {
         return response()->json([
-            'status' => 'success',
-            'data' => \App\Http\Resources\ProductResource::collection($products)
-        ]);
+            'status' => 'error',
+            'message' => 'حدث خطأ في السيرفر',
+            'error' => $e->getMessage()
+        ], 500);
     }
+}
 
     // عرض تفاصيل منتج واحد محدد
     public function show($id)
