@@ -1,37 +1,29 @@
-FROM php:8.2-apache
+FROM dunglas/frankenphp:1-php8.2
 
-# Install extensions
-RUN apt-get update && apt-get install -y \
-    libzip-dev \
+# تثبيت الإضافات اللازمة للـ Database والـ Zip لـ Laravel
+RUN install-php-extensions \
+    pdo_mysql \
     zip \
-    unzip \
-    git \
-    && docker-php-ext-install pdo pdo_mysql zip bcmath \
-    && apt-get clean && rm -rf /var/lib/apt/lists/*
+    bcmath \
+    opcache
 
-# تفعيل الـ rewrite وتعطيل الموديول الزيادة من الـ config الرئيسي مباشرة
-RUN a2enmod rewrite && \
-    sed -i 's/^LoadModule mpm_event_module/#LoadModule mpm_event_module/' /etc/apache2/mods-available/mpm_event.load || true
-
-# Install Composer
+# تثبيت Composer
 COPY --from=composer:2 /usr/bin/composer /usr/bin/composer
 
-WORKDIR /var/www/html
+WORKDIR /app
 
-# Copy files
+# نسخ ملفات المشروع
 COPY . .
 
-# Install production dependencies only
+# تثبيت مكتبات الـ Composer للـ Production
 RUN composer install --no-dev --optimize-autoloader --no-interaction
 
-# Copy Apache config (proper file instead of echo)
-COPY docker/apache.conf /etc/apache2/sites-available/000-default.conf
-RUN a2ensite 000-default.conf
+# ضبط الصلاحيات للمجلدات الخاصة بـ Laravel
+RUN chown -R www-data:www-data /app/storage /app/bootstrap/cache && \
+    chmod -R 775 /app/storage /app/bootstrap/cache
 
-# Set permissions
-RUN chown -R www-data:www-data /var/www/html \
-    && chmod -R 775 storage bootstrap/cache
-
+# تشغيل السيرفر تلقائياً على بورت 80
 EXPOSE 80
+ENV PORT=80
 
-CMD ["apache2-foreground"]
+CMD ["frankenphp", "run", "--config", "/etc/caddy/Caddyfile"]
