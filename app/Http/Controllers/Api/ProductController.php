@@ -214,7 +214,7 @@ public function index(\Illuminate\Http\Request $request)
     }
 
     // ==========================================
-    // 4. DELETE (حذف منتج - حذف مؤقت Soft Delete)
+    // 4. DELETE (حذف منتج نهائياً)
     // ==========================================
     public function destroy($id)
     {
@@ -224,12 +224,40 @@ public function index(\Illuminate\Http\Request $request)
             return response()->json(['status' => 'error', 'message' => 'المنتج غير موجود'], 404);
         }
 
-        $product->delete(); // سيقوم بالحذف المؤقت لأننا قمنا بإعداد SoftDeletes في الموديل
+        try {
+            // حذف الصورة الرئيسية من التخزين إذا كانت موجودة
+            if ($product->image_url) {
+                $oldPath = str_replace('/storage/', '', $product->image_url);
+                Storage::disk('public')->delete($oldPath);
+            }
 
-        return response()->json([
-            'status' => 'success',
-            'message' => 'تم حذف المنتج بنجاح وأرشفته!'
-        ]);
+            // حذف الصور الإضافية للمنتج من التخزين وقاعدة البيانات
+            foreach ($product->images as $prodImg) {
+                if ($prodImg->image_url) {
+                    $imgPath = str_replace('/storage/', '', $prodImg->image_url);
+                    Storage::disk('public')->delete($imgPath);
+                }
+            }
+            $product->images()->delete();
+
+            // فك ارتباط الألوان والمقاسات بالجداول الوسيطة
+            $product->colors()->detach();
+            $product->sizes()->detach();
+
+            // حذف المنتج نهائياً من قاعدة البيانات
+            $product->forceDelete();
+
+            return response()->json([
+                'status' => 'success',
+                'message' => 'تم حذف المنتج نهائياً بنجاح!'
+            ]);
+        } catch (\Exception $e) {
+            // في حال وجود قيود مفتاح أجنبي (مثلاً إذا كان المنتج موجوداً في طلبات مكتملة)
+            return response()->json([
+                'status' => 'error',
+                'message' => 'لا يمكن حذف هذا المنتج نهائياً لأنه مرتبط بطلبيات مسبقة للعملاء. يمكنك تعديله أو تغيير كمية المخزون بدلاً من ذلك.'
+            ], 409);
+        }
     }
 
     public function categories()

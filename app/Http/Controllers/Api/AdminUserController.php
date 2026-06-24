@@ -120,7 +120,7 @@ class AdminUserController extends Controller
     }
 
     /**
-     * حذف مستخدم نهائياً (Soft Delete)
+     * حذف مستخدم نهائياً (Force Delete)
      */
     public function destroy(Request $request, $id): JsonResponse
     {
@@ -135,15 +135,21 @@ class AdminUserController extends Controller
             return response()->json(['status' => 'error', 'message' => 'لا يمكنك حذف حسابك بنفسك'], 403);
         }
 
+        // حذف البيانات المرتبطة لتجنب قيود المفتاح الأجنبي
+        $user->wishlist()->delete();
+        $user->cartItems()->delete();
+        $user->testimonials()->delete();
+        $user->orders()->delete();
+
         // إلغاء الجلسات وحذف التوكنات
         $user->tokens()->delete();
 
-        // حذف مؤقت للحساب
-        $user->delete();
+        // حذف نهائي للحساب من قاعدة البيانات
+        $user->forceDelete();
 
         return response()->json([
             'status' => 'success',
-            'message' => 'تم حذف حساب المستخدم بنجاح'
+            'message' => 'تم حذف حساب المستخدم والبيانات المرتبطة به نهائياً بنجاح'
         ]);
     }
 }
