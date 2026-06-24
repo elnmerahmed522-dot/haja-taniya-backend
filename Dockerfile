@@ -9,8 +9,8 @@ RUN apt-get update && apt-get install -y \
     && docker-php-ext-install pdo pdo_mysql zip bcmath \
     && apt-get clean && rm -rf /var/lib/apt/lists/*
 
-# Enable Apache mod_rewrite and fix MPM conflict
-RUN a2dismod mpm_event && a2enmod mpm_prefork rewrite
+# تعطيل mpm_event نهائياً وتفعيل mpm_prefork و rewrite بشكل صحيح
+RUN a2dismod mpm_event && a2enmod mpm_prefork && a2enmod rewrite
 
 # Install Composer
 COPY --from=composer:2 /usr/bin/composer /usr/bin/composer
@@ -25,6 +25,7 @@ RUN composer install --no-dev --optimize-autoloader --no-interaction
 
 # Copy Apache config (proper file instead of echo)
 COPY docker/apache.conf /etc/apache2/sites-available/000-default.conf
+RUN a2ensite 000-default.conf
 
 # Set permissions
 RUN chown -R www-data:www-data /var/www/html \
