@@ -25,7 +25,13 @@ return [
         'https://haja-taniya-frontend.vercel.app',
     ],
 
-    'allowed_origins_patterns' => [],
+    'allowed_origins_patterns' => [
+        // يسمح لأي Vercel deployment URL (preview + production)
+        '#^https://haja-taniya-frontend.*\.vercel\.app$#',
+        // يسمح لأي Vercel preview URL عام
+        '#^https://.*\.vercel\.app$#',
+    ],
+
 
     'allowed_headers' => ['*'],
 
