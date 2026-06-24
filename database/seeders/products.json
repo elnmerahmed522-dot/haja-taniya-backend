@@ -1,0 +1,1243 @@
+[
+  {
+    "id": 1,
+    "title": "Tailored Wool Coat",
+    "price": 189.0,
+    "oldPrice": 249.0,
+    "discount": "-25%",
+    "category": "Clothing",
+    "subCategory": "Women",
+    "image": "https://images.unsplash.com/photo-1539533113208-f6df8cc8b543?auto=format&fit=crop&q=80&w=800",
+    "isBestseller": true,
+    "isNew": false,
+    "description": "Exquisitely crafted from premium Italian wool blend, this tailored coat offers a sophisticated silhouette for the modern professional.",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      {
+        "name": "Charcoal",
+        "hex": "#36454F"
+      },
+      {
+        "name": "Navy Blue",
+        "hex": "#000080"
+      },
+      {
+        "name": "Classic Camel",
+        "hex": "#C19A6B"
+      },
+      {
+        "name": "Black",
+        "hex": "#000000"
+      },
+      {
+        "name": "Deep Red",
+        "hex": "#8B0000"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Essential Cotton Tee",
+    "price": 35.0,
+    "category": "Clothing",
+    "subCategory": "Men",
+    "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&q=80&w=800",
+    "isBestseller": false,
+    "isNew": true,
+    "description": "A luxury staple made from 100% organic Pima cotton. Breathable, durable, and perfectly fitted.",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      {
+        "name": "Arctic White",
+        "hex": "#FFFFFF"
+      },
+      {
+        "name": "Midnight Black",
+        "hex": "#000000"
+      },
+      {
+        "name": "Heather Grey",
+        "hex": "#9B9B9B"
+      },
+      {
+        "name": "Soft Olive",
+        "hex": "#808000"
+      },
+      {
+        "name": "Navy",
+        "hex": "#000080"
+      },
+      {
+        "name": "Bordeaux",
+        "hex": "#800000"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Aviator Sunglasses",
+    "price": 145.0,
+    "category": "Accessories",
+    "subCategory": "Sunglasses",
+    "image": "https://images.unsplash.com/photo-1572635196237-14b3f281503f?auto=format&fit=crop&q=80&w=800",
+    "isBestseller": false,
+    "isNew": false,
+    "description": "Timeless design with polarized lenses and gold-tone titanium frames. Superior UV protection and style.",
+    "sizes": [
+      "Standard",
+      "Large Fit",
+      "Small Fit"
+    ],
+    "colors": [
+      {
+        "name": "Gold / Green",
+        "hex": "#FFD700"
+      },
+      {
+        "name": "Silver / Blue",
+        "hex": "#C0C0C0"
+      },
+      {
+        "name": "Matte Black",
+        "hex": "#28282B"
+      },
+      {
+        "name": "Rose Gold",
+        "hex": "#B76E79"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Premium Leather Sneakers",
+    "price": 165.0,
+    "category": "Footwear",
+    "subCategory": "Sneakers",
+    "image": "https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&q=80&w=800",
+    "isBestseller": true,
+    "isNew": true,
+    "description": "Handcrafted leather sneakers with a sleek profile. Engineered for all-day comfort without sacrificing elegance.",
+    "sizes": [
+      "38",
+      "39",
+      "40",
+      "41",
+      "42",
+      "43",
+      "44",
+      "45"
+    ],
+    "colors": [
+      {
+        "name": "Cloud White",
+        "hex": "#F5F5F5"
+      },
+      {
+        "name": "Cognac Tan",
+        "hex": "#D2B48C"
+      },
+      {
+        "name": "Onyx Black",
+        "hex": "#1A1A1A"
+      },
+      {
+        "name": "Navy Suede",
+        "hex": "#191970"
+      },
+      {
+        "name": "Sand",
+        "hex": "#C2B280"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Luxury Tote Bag",
+    "price": 280.0,
+    "oldPrice": 350.0,
+    "discount": "-20%",
+    "category": "Bags",
+    "subCategory": "Totes",
+    "image": "https://images.unsplash.com/photo-1584916201218-f4242ceb4809?auto=format&fit=crop&q=80&w=800",
+    "isBestseller": true,
+    "isNew": false,
+    "description": "Spacious and elegant, crafted from the finest Saffiano leather. Designed for the woman on the go.",
+    "sizes": [
+      "Small",
+      "Medium",
+      "Large",
+      "Expressive XL"
+    ],
+    "colors": [
+      {
+        "name": "Deep Noir",
+        "hex": "#000000"
+      },
+      {
+        "name": "Vintage Burgundy",
+        "hex": "#800020"
+      },
+      {
+        "name": "Forest Green",
+        "hex": "#013220"
+      },
+      {
+        "name": "Sand Beige",
+        "hex": "#C2B280"
+      },
+      {
+        "name": "Midnight Blue",
+        "hex": "#191970"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Classic Chronograph",
+    "price": 225.0,
+    "category": "Watches",
+    "subCategory": "Analog",
+    "image": "https://images.unsplash.com/photo-1524592094714-0f0654e20314?auto=format&fit=crop&q=80&w=800",
+    "isBestseller": false,
+    "isNew": true,
+    "description": "Precision movement meets elegant minimalism. Sapphire crystal glass and a premium stainless steel band.",
+    "sizes": [
+      "38mm Case",
+      "40mm Case",
+      "42mm Case",
+      "44mm Case"
+    ],
+    "colors": [
+      {
+        "name": "Silver Steel",
+        "hex": "#E5E4E2"
+      },
+      {
+        "name": "Gold Steel",
+        "hex": "#D4AF37"
+      },
+      {
+        "name": "Rose Gold",
+        "hex": "#B76E79"
+      },
+      {
+        "name": "Black Obsidian",
+        "hex": "#0B0B0B"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Silk Evening Gown",
+    "price": 450.0,
+    "category": "Clothing",
+    "subCategory": "Women",
+    "image": "https://images.unsplash.com/photo-1566174053879-31528523f8ae?auto=format&fit=crop&q=80&w=800",
+    "isBestseller": false,
+    "isNew": true,
+    "description": "A stunning floor-length gown made from 100% pure Mulberry silk. Effortless elegance for your most special nights.",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      {
+        "name": "Midnight Blue",
+        "hex": "#191970"
+      },
+      {
+        "name": "Emerald Green",
+        "hex": "#50C878"
+      },
+      {
+        "name": "Crimson Red",
+        "hex": "#DC143C"
+      },
+      {
+        "name": "Royal Purple",
+        "hex": "#7851A9"
+      },
+      {
+        "name": "Midnight Black",
+        "hex": "#000000"
+      }
+    ]
+  },
+  {
+    "id": 100,
+    "title": "Men's Urban Parka",
+    "price": 145.0,
+    "category": "Clothing",
+    "subCategory": "Men",
+    "image": "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&fit=crop&q=80&w=800",
+    "isBestseller": true,
+    "isNew": true,
+    "description": "Weatherproof parka designed for the urban explorer. Combining style with ultimate protection.",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      {
+        "name": "Forest Green",
+        "hex": "#228B22"
+      },
+      {
+        "name": "Midnight",
+        "hex": "#191970"
+      },
+      {
+        "name": "Black",
+        "hex": "#000000"
+      },
+      {
+        "name": "Mustard",
+        "hex": "#FFDB58"
+      }
+    ]
+  },
+  {
+    "id": 101,
+    "title": "Kids' Organic Pajama Set",
+    "price": 45.0,
+    "category": "Clothing",
+    "subCategory": "Kids",
+    "image": "https://images.unsplash.com/photo-1516627145497-ae6968895b74?auto=format&fit=crop&q=80&w=800",
+    "isBestseller": false,
+    "isNew": true,
+    "description": "Ultra-soft, 100% organic cotton pajamas for a restful night's sleep.",
+    "sizes": [
+      "1Y",
+      "2Y",
+      "4Y",
+      "6Y",
+      "8Y",
+      "10Y"
+    ],
+    "colors": [
+      {
+        "name": "Dusty Blue",
+        "hex": "#5DADE2"
+      },
+      {
+        "name": "Soft Pink",
+        "hex": "#FADBD8"
+      },
+      {
+        "name": "Mint Green",
+        "hex": "#98FF98"
+      },
+      {
+        "name": "Lemon",
+        "hex": "#FFF700"
+      }
+    ]
+  },
+  {
+    "id": 102,
+    "title": "Men's Slim Fit Chinos",
+    "price": 65.0,
+    "category": "Clothing",
+    "subCategory": "Men",
+    "image": "https://images.unsplash.com/photo-1473966968600-fa801b869a1a?auto=format&fit=crop&q=80&w=800",
+    "isBestseller": false,
+    "isNew": false,
+    "description": "Versatile slim fit chinos made from high-quality stretch cotton for all-day comfort.",
+    "sizes": [
+      "28",
+      "30",
+      "32",
+      "34",
+      "36",
+      "38"
+    ],
+    "colors": [
+      {
+        "name": "Khaki",
+        "hex": "#C3B091"
+      },
+      {
+        "name": "Olive",
+        "hex": "#556B2F"
+      },
+      {
+        "name": "Navy",
+        "hex": "#000080"
+      },
+      {
+        "name": "Black",
+        "hex": "#000000"
+      },
+      {
+        "name": "Stone",
+        "hex": "#A2A2A2"
+      }
+    ]
+  },
+  {
+    "id": 103,
+    "title": "Women's Cashmere Wrap",
+    "price": 120.0,
+    "category": "Clothing",
+    "subCategory": "Women",
+    "image": "https://www.freedomsilk.com/images/attributes/beige_922.jpg",
+    "isBestseller": true,
+    "isNew": false,
+    "description": "Luxurious pure cashmere wrap, perfect for layering during cooler evenings.",
+    "sizes": [
+      "One Size"
+    ],
+    "colors": [
+      {
+        "name": "Heather Grey",
+        "hex": "#D3D3D3"
+      },
+      {
+        "name": "Deep Plum",
+        "hex": "#4B0082"
+      },
+      {
+        "name": "Classic Black",
+        "hex": "#000000"
+      },
+      {
+        "name": "Camel",
+        "hex": "#C19A6B"
+      },
+      {
+        "name": "Soft White",
+        "hex": "#F5F5F5"
+      }
+    ]
+  },
+  {
+    "id": 104,
+    "title": "Kids' Hooded Raincoat",
+    "price": 55.0,
+    "category": "Clothing",
+    "subCategory": "Kids",
+    "image": "https://images.unsplash.com/photo-1503919005314-30d93d07d823?auto=format&fit=crop&q=80&w=800",
+    "isBestseller": false,
+    "isNew": true,
+    "description": "Colorful and waterproof raincoat to keep your little ones dry during playtime.",
+    "sizes": [
+      "2Y",
+      "4Y",
+      "6Y",
+      "8Y",
+      "10Y",
+      "12Y"
+    ],
+    "colors": [
+      {
+        "name": "Sun Yellow",
+        "hex": "#FFFF00"
+      },
+      {
+        "name": "Ocean Blue",
+        "hex": "#0000FF"
+      },
+      {
+        "name": "Bright Red",
+        "hex": "#FF0000"
+      },
+      {
+        "name": "Grass Green",
+        "hex": "#00FF00"
+      }
+    ]
+  },
+  {
+    "id": 105,
+    "title": "Men's Linen Summer Suit",
+    "price": 280.0,
+    "category": "Clothing",
+    "subCategory": "Men",
+    "image": "https://i.pinimg.com/736x/44/1e/10/441e10064c690e62edb402ca5a8bee98.jpg",
+    "isBestseller": false,
+    "isNew": true,
+    "description": "Breathable linen suit, ideal for outdoor weddings and summer events.",
+    "sizes": [
+      "36",
+      "38",
+      "40",
+      "42",
+      "44",
+      "46"
+    ],
+    "colors": [
+      {
+        "name": "Sand",
+        "hex": "#F4A460"
+      },
+      {
+        "name": "Light Blue",
+        "hex": "#ADD8E6"
+      },
+      {
+        "name": "Off-White",
+        "hex": "#FAF9F6"
+      },
+      {
+        "name": "Navy",
+        "hex": "#000080"
+      }
+    ]
+  },
+  {
+    "id": 106,
+    "title": "Women's Leather Biker Jacket",
+    "price": 195.0,
+    "category": "Clothing",
+    "subCategory": "Women",
+    "image": "https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&q=80&w=800",
+    "isBestseller": true,
+    "isNew": false,
+    "description": "Edgy and timeless leather biker jacket with silver-tone hardware.",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      {
+        "name": "Classic Black",
+        "hex": "#000000"
+      },
+      {
+        "name": "Bordeaux",
+        "hex": "#800000"
+      },
+      {
+        "name": "Tan",
+        "hex": "#D2B48C"
+      },
+      {
+        "name": "Forest Green",
+        "hex": "#013220"
+      }
+    ]
+  },
+  {
+    "id": 107,
+    "title": "Kids' Graphic Cotton Tee",
+    "price": 25.0,
+    "category": "Clothing",
+    "subCategory": "Kids",
+    "image": "https://i5.walmartimages.com/seo/children-s-wear-Armor-God-Bible-Verse-Christian-Knight-Graphic-T-Shirt-Kids-Boys-Girls-Toddler-Ephesians-6-10-18-Faith-Based-Cute-Black-Cotton-Tee_3ab545c1-286f-45ca-9109-8896fbff0178.daa18a39ceeb50dc5ba3bd6976ffaa6c.jpeg",
+    "isBestseller": true,
+    "isNew": true,
+    "description": "Fun and playful graphic tee made from breathable soft cotton.",
+    "sizes": [
+      "1Y",
+      "2Y",
+      "4Y",
+      "6Y",
+      "8Y",
+      "10Y"
+    ],
+    "colors": [
+      {
+        "name": "White",
+        "hex": "#FFFFFF"
+      },
+      {
+        "name": "Grey",
+        "hex": "#808080"
+      },
+      {
+        "name": "Royal Blue",
+        "hex": "#4169E1"
+      },
+      {
+        "name": "Orange",
+        "hex": "#FFA500"
+      }
+    ]
+  },
+  {
+    "id": 108,
+    "title": "Men's Oxford Button-Down",
+    "price": 55.0,
+    "category": "Clothing",
+    "subCategory": "Men",
+    "image": "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&q=80&w=800",
+    "isBestseller": true,
+    "isNew": false,
+    "description": "A classic wardrobe essential, our Oxford shirt is crafted from durable cotton.",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      {
+        "name": "Sky Blue",
+        "hex": "#87CEEB"
+      },
+      {
+        "name": "White",
+        "hex": "#FFFFFF"
+      },
+      {
+        "name": "Pink",
+        "hex": "#FFC0CB"
+      },
+      {
+        "name": "Light Grey",
+        "hex": "#D3D3D3"
+      },
+      {
+        "name": "Navy",
+        "hex": "#000080"
+      }
+    ]
+  },
+  {
+    "id": 109,
+    "title": "Women's Floral Maxi Dress",
+    "price": 85.0,
+    "category": "Clothing",
+    "subCategory": "Women",
+    "image": "https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&q=80&w=800",
+    "isBestseller": false,
+    "isNew": true,
+    "description": "Elegant floral maxi dress with a flattering wrap design, perfect for summer days.",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      {
+        "name": "Pink Floral",
+        "hex": "#FFC0CB"
+      },
+      {
+        "name": "Blue Floral",
+        "hex": "#4682B4"
+      },
+      {
+        "name": "Yellow Floral",
+        "hex": "#FFFF00"
+      },
+      {
+        "name": "Green Floral",
+        "hex": "#90EE90"
+      }
+    ]
+  },
+  {
+    "id": 200,
+    "title": "Wool Fedora Hat",
+    "price": 55.0,
+    "category": "Accessories",
+    "subCategory": "Hats",
+    "image": "https://images.unsplash.com/photo-1514327605112-b887c0e61c0a?auto=format&fit=crop&q=80&w=800",
+    "isBestseller": false,
+    "isNew": true,
+    "description": "Classic wide-brim fedora in premium felted wool.",
+    "sizes": [
+      "S/M",
+      "L/XL",
+      "Universal"
+    ],
+    "colors": [
+      {
+        "name": "Stealth Black",
+        "hex": "#121212"
+      },
+      {
+        "name": "Walnut",
+        "hex": "#773F1A"
+      },
+      {
+        "name": "Grey",
+        "hex": "#808080"
+      },
+      {
+        "name": "Camel",
+        "hex": "#C19A6B"
+      }
+    ]
+  },
+  {
+    "id": 201,
+    "title": "Handcrafted Leather Belt",
+    "price": 45.0,
+    "category": "Accessories",
+    "subCategory": "Belts",
+    "image": "https://image.made-in-china.com/2f0j00tapvAGMsgQcB/Fashion-Ladies-Belt-European-Ddesigner-Brand-Lady-Genuine-Leather-Belts-for-Women.jpg",
+    "description": "Full-grain leather belt with a solid brass buckle.",
+    "sizes": [
+      "30",
+      "32",
+      "34",
+      "36",
+      "38",
+      "40"
+    ],
+    "colors": [
+      {
+        "name": "Cognac",
+        "hex": "#9A6324"
+      },
+      {
+        "name": "Dark Brown",
+        "hex": "#3E2723"
+      },
+      {
+        "name": "Black",
+        "hex": "#000000"
+      },
+      {
+        "name": "Tan",
+        "hex": "#D2B48C"
+      }
+    ]
+  },
+  {
+    "id": 202,
+    "title": "Cashmere Plaid Scarf",
+    "price": 75.0,
+    "category": "Accessories",
+    "subCategory": "Scarves",
+    "image": "https://images.unsplash.com/photo-1520903920243-00d872a2d1c9?auto=format&fit=crop&q=80&w=800",
+    "description": "Incredibly soft cashmere scarf in a timeless plaid pattern.",
+    "sizes": [
+      "Standard",
+      "Large"
+    ],
+    "colors": [
+      {
+        "name": "Heritage Plaid",
+        "hex": "#8B4513"
+      },
+      {
+        "name": "Blue/Grey Plaid",
+        "hex": "#5DADE2"
+      },
+      {
+        "name": "Monochrome Plaid",
+        "hex": "#343434"
+      }
+    ]
+  },
+  {
+    "id": 203,
+    "title": "Slim Bi-fold Wallet",
+    "price": 40.0,
+    "category": "Accessories",
+    "subCategory": "Wallets",
+    "image": "https://images.unsplash.com/photo-1627123424574-724758594e93?auto=format&fit=crop&q=80&w=800",
+    "description": "Minimalist leather wallet designed for the modern essentialist.",
+    "sizes": [
+      "Standard"
+    ],
+    "colors": [
+      {
+        "name": "Espresso",
+        "hex": "#3E2723"
+      },
+      {
+        "name": "Midnight Black",
+        "hex": "#000000"
+      },
+      {
+        "name": "Tan",
+        "hex": "#D2B48C"
+      },
+      {
+        "name": "Burgundy",
+        "hex": "#800020"
+      }
+    ]
+  },
+  {
+    "id": 300,
+    "title": "Rugged Work Boots",
+    "price": 180.0,
+    "category": "Footwear",
+    "subCategory": "Boots",
+    "image": "https://img.pikbest.com/png-images/20240824/rugged-work-boots-with-laces-tied-isolated-on-transparent-background_10753084.png!bw700",
+    "description": "Durable leather boots with a Goodyear welt and non-slip sole.",
+    "sizes": [
+      "40",
+      "41",
+      "42",
+      "43",
+      "44",
+      "45",
+      "46"
+    ],
+    "colors": [
+      {
+        "name": "Tobacco",
+        "hex": "#B87333"
+      },
+      {
+        "name": "Dark Walnut",
+        "hex": "#4E342E"
+      },
+      {
+        "name": "Jet Black",
+        "hex": "#000000"
+      }
+    ]
+  },
+  {
+    "id": 301,
+    "title": "Classic Suede Loafers",
+    "price": 135.0,
+    "category": "Footwear",
+    "subCategory": "Loafers",
+    "image": "https://images.unsplash.com/photo-1533867617858-e7b97e060509?auto=format&fit=crop&q=80&w=800",
+    "description": "Hand-stitched suede loafers for a polished yet relaxed look.",
+    "sizes": [
+      "39",
+      "40",
+      "41",
+      "42",
+      "43",
+      "44",
+      "45"
+    ],
+    "colors": [
+      {
+        "name": "Navy Suede",
+        "hex": "#000080"
+      },
+      {
+        "name": "Grey Suede",
+        "hex": "#808080"
+      },
+      {
+        "name": "Tan Suede",
+        "hex": "#D2B48C"
+      },
+      {
+        "name": "Olive Suede",
+        "hex": "#808000"
+      }
+    ]
+  },
+  {
+    "id": 302,
+    "title": "Patent Formal Shoes",
+    "price": 195.0,
+    "category": "Footwear",
+    "subCategory": "Formal",
+    "image": "https://images.unsplash.com/photo-1614252235316-8c857d38b5f4?auto=format&fit=crop&q=80&w=800",
+    "description": "Sleek patent leather oxfords for black-tie events.",
+    "sizes": [
+      "40",
+      "41",
+      "42",
+      "43",
+      "44",
+      "45"
+    ],
+    "colors": [
+      {
+        "name": "High Gloss Black",
+        "hex": "#000000"
+      },
+      {
+        "name": "Deep Midnight Blue",
+        "hex": "#000033"
+      },
+      {
+        "name": "Burgundy Lace",
+        "hex": "#722F37"
+      }
+    ]
+  },
+  {
+    "id": 303,
+    "title": "Leather Strappy Sandals",
+    "price": 85.0,
+    "category": "Footwear",
+    "subCategory": "Sandals",
+    "image": "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&q=80&w=800",
+    "description": "Hand-crafted leather sandals with adjustable straps.",
+    "sizes": [
+      "36",
+      "37",
+      "38",
+      "39",
+      "40",
+      "41"
+    ],
+    "colors": [
+      {
+        "name": "Tan",
+        "hex": "#D2B48C"
+      },
+      {
+        "name": "Gold",
+        "hex": "#D4AF37"
+      },
+      {
+        "name": "Black",
+        "hex": "#000000"
+      },
+      {
+        "name": "White",
+        "hex": "#FFFFFF"
+      }
+    ]
+  },
+  {
+    "id": 400,
+    "title": "City Tech Backpack",
+    "price": 110.0,
+    "category": "Bags",
+    "subCategory": "Backpacks",
+    "image": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&q=80&w=800",
+    "description": "Functional backpack with a dedicated 16-inch laptop compartment.",
+    "sizes": [
+      "15L",
+      "25L",
+      "35L"
+    ],
+    "colors": [
+      {
+        "name": "Matte Grey",
+        "hex": "#757575"
+      },
+      {
+        "name": "Stealth Black",
+        "hex": "#121212"
+      },
+      {
+        "name": "Navy Blue",
+        "hex": "#000080"
+      },
+      {
+        "name": "Military Green",
+        "hex": "#4B5320"
+      }
+    ]
+  },
+  {
+    "id": 401,
+    "title": "Quilted Evening Clutch",
+    "price": 85.0,
+    "category": "Bags",
+    "subCategory": "Clutches",
+    "image": "https://assets.shoelace.ie/thumbs/1000xauto/2025-02::1738509139-gold-quilted-evening-clutch-1.jpg",
+    "description": "Chic quilted leather clutch with a gold-tone chain strap.",
+    "sizes": [
+      "Small",
+      "Standard"
+    ],
+    "colors": [
+      {
+        "name": "Champagne",
+        "hex": "#F7E7CE"
+      },
+      {
+        "name": "Classic Black",
+        "hex": "#000000"
+      },
+      {
+        "name": "Pearl White",
+        "hex": "#F0EAD6"
+      },
+      {
+        "name": "Rose Gold",
+        "hex": "#B76E79"
+      }
+    ]
+  },
+  {
+    "id": 402,
+    "title": "Leather Weekender Bag",
+    "price": 240.0,
+    "category": "Bags",
+    "subCategory": "Travel",
+    "image": "https://images.unsplash.com/photo-1547949003-9792a18a2601?auto=format&fit=crop&q=80&w=800",
+    "description": "Spacious duffle bag crafted from rugged pull-up leather.",
+    "sizes": [
+      "Medium",
+      "Large",
+      "Premium XL"
+    ],
+    "colors": [
+      {
+        "name": "Vintage Brown",
+        "hex": "#5D4037"
+      },
+      {
+        "name": "Mahogany",
+        "hex": "#400E0E"
+      },
+      {
+        "name": "Ebony",
+        "hex": "#121212"
+      }
+    ]
+  },
+  {
+    "id": 403,
+    "title": "Minimalist Handbag",
+    "price": 150.0,
+    "category": "Bags",
+    "subCategory": "Handbags",
+    "image": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&q=80&w=800",
+    "description": "Elegant and structured handbag for everyday sophistication.",
+    "sizes": [
+      "Standard",
+      "Large"
+    ],
+    "colors": [
+      {
+        "name": "Nude",
+        "hex": "#E3C9B8"
+      },
+      {
+        "name": "Tan",
+        "hex": "#D2B48C"
+      },
+      {
+        "name": "Black",
+        "hex": "#000000"
+      },
+      {
+        "name": "Dusty Blue",
+        "hex": "#5DADE2"
+      }
+    ]
+  },
+  {
+    "id": 500,
+    "title": "Diamond Solitaire Ring",
+    "price": 1200.0,
+    "category": "Jewelry",
+    "subCategory": "Rings",
+    "image": "https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&q=80&w=800",
+    "description": "Exquisite 1-carat diamond set in 18k white gold.",
+    "sizes": [
+      "5",
+      "6",
+      "7",
+      "8",
+      "9"
+    ],
+    "colors": [
+      {
+        "name": "White Gold",
+        "hex": "#F8F8FF"
+      },
+      {
+        "name": "Yellow Gold",
+        "hex": "#FFD700"
+      },
+      {
+        "name": "Rose Gold",
+        "hex": "#B76E79"
+      }
+    ]
+  },
+  {
+    "id": 501,
+    "title": "Gold Link Bracelet",
+    "price": 350.0,
+    "category": "Jewelry",
+    "subCategory": "Bracelets",
+    "image": "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&q=80&w=800",
+    "description": "Solid 14k gold chain link bracelet with a high-polish finish.",
+    "sizes": [
+      "6.5 inch",
+      "7.0 inch",
+      "7.5 inch"
+    ],
+    "colors": [
+      {
+        "name": "Yellow Gold",
+        "hex": "#FFD700"
+      },
+      {
+        "name": "Rose Gold",
+        "hex": "#B76E79"
+      },
+      {
+        "name": "White Gold",
+        "hex": "#F8F8FF"
+      }
+    ]
+  },
+  {
+    "id": 502,
+    "title": "Pearl Drop Earrings",
+    "price": 275.0,
+    "category": "Jewelry",
+    "subCategory": "Earrings",
+    "image": "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&q=80&w=800",
+    "description": "Lustrous freshwater pearls set in 18k gold vermeil.",
+    "sizes": [
+      "Standard Drop",
+      "Long Drop"
+    ],
+    "colors": [
+      {
+        "name": "Cream / Gold",
+        "hex": "#FFFDD0"
+      },
+      {
+        "name": "White / Silver",
+        "hex": "#F5F5F5"
+      },
+      {
+        "name": "Pink / Gold",
+        "hex": "#FFC0CB"
+      }
+    ]
+  },
+  {
+    "id": 503,
+    "title": "Initial Pendant Necklace",
+    "price": 180.0,
+    "category": "Jewelry",
+    "subCategory": "Necklaces",
+    "image": "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&q=80&w=800",
+    "description": "Personalized 14k gold necklace with a custom initial pendant.",
+    "sizes": [
+      "16 inch",
+      "18 inch",
+      "20 inch"
+    ],
+    "colors": [
+      {
+        "name": "Yellow Gold",
+        "hex": "#FFD700"
+      },
+      {
+        "name": "Rose Gold",
+        "hex": "#B76E79"
+      },
+      {
+        "name": "White Gold",
+        "hex": "#F8F8FF"
+      }
+    ]
+  },
+  {
+    "id": 600,
+    "title": "Modern Smartwatch",
+    "price": 350.0,
+    "category": "Watches",
+    "subCategory": "Smartwatches",
+    "image": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?auto=format&fit=crop&q=80&w=800",
+    "description": "State-of-the-art health tracking with a premium OLED display.",
+    "sizes": [
+      "40mm",
+      "42mm",
+      "44mm",
+      "46mm"
+    ],
+    "colors": [
+      {
+        "name": "Space Grey",
+        "hex": "#343434"
+      },
+      {
+        "name": "Midnight Black",
+        "hex": "#000000"
+      },
+      {
+        "name": "Silver Steel",
+        "hex": "#E5E4E2"
+      },
+      {
+        "name": "Rose Gold",
+        "hex": "#B76E79"
+      }
+    ]
+  },
+  {
+    "id": 601,
+    "title": "Digital Explorer Watch",
+    "price": 95.0,
+    "category": "Watches",
+    "subCategory": "Digital",
+    "image": "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&q=80&w=800",
+    "description": "Rugged digital watch with GPS and water resistance.",
+    "sizes": [
+      "38mm",
+      "40mm",
+      "42mm"
+    ],
+    "colors": [
+      {
+        "name": "Stealth Black",
+        "hex": "#000000"
+      },
+      {
+        "name": "Military Olive",
+        "hex": "#4B5320"
+      },
+      {
+        "name": "Desert Tan",
+        "hex": "#D2B48C"
+      }
+    ]
+  },
+  {
+    "id": 602,
+    "title": "Luxury Sapphire Watch",
+    "price": 1200.0,
+    "category": "Watches",
+    "subCategory": "Luxury",
+    "image": "https://images.unsplash.com/photo-1547996160-81dfa63595aa?auto=format&fit=crop&q=80&w=800",
+    "description": "High-end Swiss movement watch with a scratch-resistant sapphire face.",
+    "sizes": [
+      "40mm",
+      "42mm",
+      "44mm"
+    ],
+    "colors": [
+      {
+        "name": "Steel / Blue",
+        "hex": "#4682B4"
+      },
+      {
+        "name": "Gold / Silver",
+        "hex": "#D4AF37"
+      },
+      {
+        "name": "Rose / Brown",
+        "hex": "#8B4513"
+      },
+      {
+        "name": "Full Black",
+        "hex": "#000000"
+      }
+    ]
+  }
+]

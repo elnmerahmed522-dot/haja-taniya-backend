@@ -5,6 +5,7 @@ namespace Database\Seeders;
 use App\Models\User;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\Hash; // استيراد الـ Hash أفضل وأسرع
 
 class DatabaseSeeder extends Seeder
 {
@@ -13,20 +14,21 @@ class DatabaseSeeder extends Seeder
     /**
      * Seed the application's database.
      */
-public function run(): void
-{
-    // 1. إنشاء المستخدم بطريقة create المباشرة (بدون factory)
-    // تأكد من استيراد الموديل فوق: use App\Models\User;
-    User::create([
-        'name' => 'admin',
-        'email' => 'admin@email.com',
-        'password' => bcrypt('password123'), // تشفير كلمة المرور
-        'role' => 'admin', // الدور الافتراضي
-    ]);
+    public function run(): void
+    {
+        // 1. استخدام updateOrCreate لمنع تعارض الـ Duplicate Entry
+        User::updateOrCreate(
+            ['email' => 'admin@email.com'], // بيبحث بالإيميل ده أولاً
+            [
+                'name' => 'admin',
+                'password' => Hash::make('password123'), // الطريقة الأحدث للتشفير
+                'role' => 'admin',
+            ]
+        );
 
-    // 2. استدعاء بقية الـ Seeders للمنتجات والأقسام
-    $this->call([
-        ProductSeeder::class,
-    ]);
-}
+        // 2. استدعاء بقية الـ Seeders للمنتجات
+        $this->call([
+            ProductSeeder::class,
+        ]);
+    }
 }

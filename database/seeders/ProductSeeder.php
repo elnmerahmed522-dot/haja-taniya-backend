@@ -13,11 +13,8 @@ class ProductSeeder extends Seeder
 {
     public function run(): void
     {
-        // 1. تحديد مسار ملف الـ JSON
-        $filePath = base_path('../HAJA TANIYA forntend/public/js/products.json');
-        if (!file_exists($filePath)) {
-            $filePath = 'E:\Full Stack Projects\Full Stack\HAJA TANIYA forntend\public\js\products.json';
-        }
+        // 1. تحديد مسار الملف داخل مجلد الـ seeders في الباك-إند
+        $filePath = database_path('seeders/products.json');
 
         if (!file_exists($filePath)) {
             $this->command->error("الملف JSON غير موجود في المسارات المحددة: {$filePath}");
