@@ -1,0 +1,14 @@
+{
+    # إيقاف الـ TLS التلقائي والـ Redirects تماماً داخلياً
+    auto_https off
+}
+
+http://:80 {
+    root * public
+    php_server
+
+    log {
+        output stdout
+        format json
+    }
+}
