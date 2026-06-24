@@ -9,13 +9,10 @@
 http://:80 {
     root * /app/public
 
-    # إخبار Caddy يثق في جميع الـ Proxies اللي أمامه (Railway)
-    trusted_proxies static private_ranges
-
     php_server
 
     log {
         output stdout
         format json
     }
-}
+}
